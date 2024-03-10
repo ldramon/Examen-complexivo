@@ -1,0 +1,56 @@
+DATOS PARA EL DESPLIEGUE DE LA APLICACIÓN:
+
+----------------------------------------------------------
+                          FRONTEND
+----------------------------------------------------------
+
+* Framework REACT
+* npx create-react-app Frontend
+* npm install
+* npm i react-axios --save
+* npm start
+
+RUTAS: 
+GET- http://localhost:8087/inmuebles/todos  
+POST- http://localhost:8087/inmuebles/crear
+PUT - http://localhost:8087/inmuebles/
+DELETE - http://localhost:8087/inmuebles/
+
+
+----------------------------------------------------------
+                          BACKEND
+----------------------------------------------------------
+CARACTERÍSTICAS Y DEPENDENCIAS:
+
+* Spring Boot 3.2.3
+* Proyect MAVEN
+* Lenguaje JAVA
+* PACKAGING JAR
+* JDK 17
+* Spring Boot Starter Data JPA:
+* Spring Boot Starter Web:
+* H2 Database (Runtime Scope):
+* MySQL Connector (Runtime Scope):
+* Project Lombok (Opcional):
+* Spring Boot Starter Test (Test Scope):
+
+----------------------------------------------------------
+                          BASE DE DATOS
+----------------------------------------------------------
+
+server.port=8087
+
+#CONFIGURACIONES DE LA BASE DE DATOS
+spring.datasource.url=jdbc:mysql://localhost:3306/inmobiliaria
+spring.datasource.username=root
+spring.datasource.password=Beckham_7
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+#CONFIGURACIONES DE JPA
+spring.jpa.hibernate.ddl-auto=update
+#CREATE-DROP - UPDATE
+
+spring.jpa.show-sql=true
+
+#DIALECTO
+spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
